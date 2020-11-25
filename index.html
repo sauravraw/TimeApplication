@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./styles/index.css" />
+		<script src="./src/script.js"></script>
+	</head>
+	<body>
+		<div class="timeContainer">
+			<div class="displayTime">
+				<svg>
+					<circle
+						class="defaultCircle"
+						cx="125"
+						cy="125"
+						r="120"
+						stroke="#ff88fb"
+						stroke-width="10"
+						fill="none"
+						stroke-linecap="round"
+					/>
+					<circle
+						id="animateCircle"
+						cx="125"
+						cy="125"
+						r="120"
+						stroke="#d459cb"
+						stroke-width="10"
+						fill="none"
+						stroke-linecap="round"
+					/>
+				</svg>
+				<div class="spanDiv">
+					<span class="hours">00</span>:<span class="minutes">00</span>:
+					<span class="seconds">00</span>:
+					<span class="milliseconds">00</span>
+				</div>
+			</div>
+
+			<div class="option">
+				<button id="start" onclick="start()">
+					<i class="fa fa-play"></i>
+				</button>
+				<button id="pause" onclick="pause()">
+					<i class="fa fa-pause"></i>
+				</button>
+				<button id="reset" onclick="reset()">
+					<i class="fa fa-power-off"></i>
+				</button>
+			</div>
+		</div>
+	</body>
+</html>
